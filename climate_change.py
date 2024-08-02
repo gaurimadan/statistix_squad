@@ -58,6 +58,7 @@ st.set_page_config(
 colT1,colT2 = st.columns([1,2])
 with colT2:
     st.title("Climatic Change Dashboard")
+    st.subheader("Analyzing Trends and Impact of Climate Change (SDG 13: Climate)")
 
 #Gif
 
