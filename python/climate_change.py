@@ -144,7 +144,7 @@ with map_col:
 
 fig_line = px.line(mean_tempurate_change_by_year.sort_values("Year", ascending=False), x='Year', y='Tempurate_Change',
               title='Mean Tempurate Change For Each Year', markers=True,
-              labels={'Tempurate_Change': 'Tempurate Change (°C)'}, color_discrete_sequence=['#fdbb84'])
+              labels={'Tempurate_Change': 'Tempurate Change (°C)'}, color_discrete_sequence=['#84CFFD'])
 
 fig_line.update_layout(
     xaxis=dict(showgrid=False),
