@@ -116,7 +116,7 @@ fig_map = px.choropleth(
     featureidkey='properties.name',
     locations='Country',
     color='Tempurate_Change',
-    color_continuous_scale='orrd',
+    color_continuous_scale='Viridis',
     projection='orthographic',
     labels={'Tempurate_Change': 'Tempurate Change (°C)'}
 )
@@ -155,7 +155,7 @@ fig_line.update_layout(
 
 
 fig_bar = px.bar(filtered_df.sort_values("Tempurate_Change", ascending = False).head(10), x='Country',
-                 y='Tempurate_Change', color='Tempurate_Change', color_continuous_scale = 'orrd',
+                 y='Tempurate_Change', color='Tempurate_Change', color_continuous_scale = 'Viridis',
                  title='Countries With The Highest Temperature Increase (Top 10)', text="Country",
                  labels={'Tempurate_Change': 'Tempurate Change (°C)'})
 
